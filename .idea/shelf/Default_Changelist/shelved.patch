@@ -1,0 +1,145 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1648486329673)
++++ b/.idea/compiler.xml	(date 1648486329673)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="11" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1648569841582)
++++ b/.idea/gradle.xml	(date 1648569841582)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="GRADLE" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveModulePerSourceSet" value="false" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1649701916491)
++++ b/.idea/misc.xml	(date 1649701916491)
+@@ -0,0 +1,56 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DesignSurface">
++    <option name="filePathToZoomLevelMap">
++      <map>
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/data_from.xml" value="0.17592592592592593" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/data_icon.xml" value="0.17592592592592593" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/edit.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/humidity.xml" value="0.18871794871794872" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_baseline_add_alert_24.xml" value="0.16018518518518518" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.17777777777777778" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1787037037037037" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/more_fav.xml" value="0.17777777777777778" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/shape.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/shape1.xml" value="0.19166666666666668" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/sun_rise.xml" value="0.18871794871794872" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_alerts.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_favaurite.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_map.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_setting.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_splash.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_user_dialog.xml" value="0.16666666666666666" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/alart_item.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/day_item.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/day_item_detail.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/favourite_item.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_alert_.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_alert_2.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_day_details.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_favourite.xml" value="0.12258064516129032" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_favourite_.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_inital_dialog.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_inital_setting.xml" value="0.16145833333333334" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_map_.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_set_alarms.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_set_allarm.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_setting_.xml" value="0.1" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/header.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/hour_item.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/initalsetting.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/menu/activity_menu.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/menu/alert_menu.xml" value="0.17552083333333332" />
++        <entry key="..\:/Users/dalia/AndroidStudioProjects/WeatherApp/app/src/main/res/menu/more_vart.xml" value="0.17552083333333332" />
++      </map>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/build/classes" />
++  </component>
++  <component name="ProjectType">
++    <option name="id" value="Android" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1649710994031)
++++ b/.idea/vcs.xml	(date 1649710994031)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1648486283894)
++++ b/.idea/.gitignore	(date 1648486283894)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml

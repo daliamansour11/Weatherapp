@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.weatherapp.home.view.HomeFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        tools:context=".home.DayDetails">
+
+        <TextView
+            android:id="@+id/day_name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:text="day-name" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weather_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardCornerRadius="32dp"
+            android:layout_weight="2"
+            app:cardMaxElevation="12dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="2dp"
+
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/day_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="cloudly"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.569"
+                    app:layout_constraintStart_toStartOf="parent"
+
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day_tem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="day-temp"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    app:layout_constraintVertical_bias="0.436" />
+
+                <ImageView
+                    android:id="@+id/day_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="5"
+                    android:paddingBottom="16dp"
+                    android:src="@drawable/weather"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/day_tem"
+                    app:layout_constraintTop_toBottomOf="@id/day_desc" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weather_last_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            app:cardCornerRadius="24dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+
+            app:cardMaxElevation="12dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="3dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="12dp"
+
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_margin="12dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/air"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/pressure_day"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="pressure"
+                        android:textColor="@color/white"
+
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+
+                        android:text="@string/pressure"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@id/one"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_margin="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/cloudy"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/cloud_day"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="cloud"
+                        android:textColor="@color/white"
+
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+
+                        android:text="@string/cloud"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/one"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_margin="12dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/humidity"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/humidity_day"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="doaa"
+                        android:textColor="@color/white"
+
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/humidity"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@id/one"
+                    app:layout_constraintStart_toEndOf="@id/two"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_margin="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/sun_rise"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/sunRise_day"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="sunrise"
+                        android:textColor="@color/white"
+
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/sun_rise"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/three"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_margin="12dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/windimg"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/wind_day"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="windspeed"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/wind_speed"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@id/five"
+                    app:layout_constraintStart_toEndOf="@id/three"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_margin="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/weather"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/sun_set_day"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="sunset"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/sun_set"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

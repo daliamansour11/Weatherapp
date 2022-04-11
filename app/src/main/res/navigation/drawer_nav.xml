@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.weatherapp.favorite.favourite_Fragment"
+        android:label="@string/favourite"
+        tools:layout="@layout/fragment_favourite"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        >
+        <action
+            android:id="@+id/action_favoriteFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.weatherapp.setting.setting_Fragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting_" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.weatherapp.home.view.HomeFragment"
+        android:label="@string/home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_dayDetails"
+            app:destination="@id/dayDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.weatherapp.maps.map_Fragment"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_map_"
+
+        >
+        <action
+            android:id="@+id/action_mapFragment_to_setAlarmsFragment"
+            app:destination="@id/setAlarmsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.example.weatherapp.Alerts.alertview.Alerts_Fragment"
+        android:label="@string/Alarm"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        >
+        <action
+            android:id="@+id/action_alarmFragment_to_setAlarmsFragment"
+            app:destination="@id/setAlarmsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setAlarmsFragment"
+        android:name="com.example.weatherapp.Alerts.alertview.Alerts_Fragment"
+        android:label="@string/Alarm"
+        tools:layout="@layout/fragment_set_alarms"
+        app:popUpTo="@id/alarmFragment"
+        app:popUpToInclusive="true"
+        >
+        <action
+            android:id="@+id/action_setAlarmsFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_setAlarmsFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment"
+            app:popUpTo="@id/alarmFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayDetails"
+        android:name="com.example.weatherApp.home."
+        android:label="@string/day_weather" >
+        <argument
+            android:name="day"
+            app:argType="com.example.weatherApp.model.Daily" />
+    </fragment>
+</navigation>

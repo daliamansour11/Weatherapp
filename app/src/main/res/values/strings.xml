@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location">Location</string>
+    <string name="language">Language</string>
+    <string name="temperature">Temperature</string>
+    <string name="windspeed">Wind Speed</string>
+    <string name="initialSetup">Initial Setup</string>
+    <string name="favouriteimage">favourite image Setup</string>
+    <string name="OK"> OK </string>
+    <string name="disable"> Disable </string>
+    <string name="Eanble"> Eanble </string>
+
+
+    <string name="notification">Notification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Setting</string>
+    <string name="favorite">Favorite</string>
+    <string name="home">Home</string>
+    <string name="touch_a_day_to_see_forecast_by_hourly">Touch a day to see forecast by hourly</string>
+    <string name="min">min</string>
+    <string name="max">Max</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="initial_setting">initial setting</string>
+    <string name="location_via">Location via</string>
+
+    <string name="gps">Gps</string>
+    <string name="ok">ok</string>
+    <string name="skip">skip</string>
+    <string name="empty">Empty</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="friday">Friday</string>
+    <string name="thursday">Thursday</string>
+    <string name="map">Map</string>
+    <string name="deleted">deleted</string>
+    <string name="dismiss">dismiss</string>
+    <string name="pressure">pressure</string>
+    <string name="cloud">cloud</string>
+    <string name="humidity">Humidity</string>
+    <string name="sun_rise">sun Rise</string>
+    <string name="wind_speed">wind speed</string>
+    <string name="sun_set">sunet</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+
+    <string name="celsius">celsius</string>
+    <string name="kelvin">kelvin</string>
+    <string name="fahrenheit">fahrenheit</string>
+    <string name="meter_second">meter/second</string>
+    <string name="mile_hour">mile/Hour</string>
+    <string name="from">From</string>
+    <string name="data_picker">Date</string>
+    <string name="time_picker">Time</string>
+    <string name="to">To</string>
+    <string name="Alarm">Alarm</string>
+    <string name="save">Save</string>
+    <string name="cancel">cancel</string>
+    <string name="select_place">select Place</string>
+    <string name="Hourofday">Hour of Day</string>
+    <string name="favourite">Favourite</string>
+    <string name="day_weather">Day Weather</string>
+    <string name="channel_name">chanelName</string>
+    <string name="channel_description">channel_description</string>
+    <string name="nav_open">nav_open</string>
+    <string name="nav_close">nav_close</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>
